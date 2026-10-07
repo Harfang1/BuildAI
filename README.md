@@ -42,8 +42,8 @@ BuildAI combine un système de recherche hybride (BM25 via **Elasticsearch** et 
 ## ⚙️ Prérequis
 
 - [Docker](https://docs.docker.com/get-docker/) et [Docker Compose](https://docs.docker.com/compose/) installés.
-- *(Optionnel mais recommandé pour les performances)* Un GPU NVIDIA avec les pilotes et [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html).
-  > **Note :** Le projet bascule **automatiquement sur le CPU et la RAM** si aucun GPU NVIDIA n'est détecté.
+- [Docker](https://docs.docker.com/get-docker/) et [Docker Compose](https://docs.docker.com/compose/) installés.
+- *(Optionnel)* Un GPU NVIDIA avec les pilotes et [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html) pour l'accélération matérielle.
 
 ---
 
@@ -56,42 +56,50 @@ git clone https://github.com/Harfang1/BuildAI.git
 cd BuildAI
 ```
 
-### 2. Lancement automatique (Recommandé) ⚡
+### 2. Configurer les variables d'environnement
 
-Un script de démarrage intelligent détecte automatiquement votre matériel (GPU NVIDIA ou CPU/RAM), prépare les dossiers requis et lance la pile :
+Copiez le fichier de modèle pour LibreChat :
 
-- **Sous Linux / macOS :**
-  ```bash
-  ./start.sh
-  ```
-  *(Ou `./start.sh --build` pour forcer la reconstruction des images)*
+```bash
+cp front/.env.example front/.env
+```
 
-- **Sous Windows :**
-  ```cmd
-  start.bat
-  ```
+*(Optionnel)* Si vous souhaitez configurer des variables d'environnement spécifiques pour le serveur Python backend :
+```bash
+cp server/.env.example server/.env
+```
 
----
+### 3. Préparer les répertoires de stockage
 
-### Alternative : Lancement manuel avec Docker Compose
+Créez les dossiers de stockage locaux :
 
-Si vous préférez exécuter les commandes `docker compose` manuellement :
+```bash
+mkdir -p storage/librechat/images \
+         storage/librechat/logs \
+         storage/meilisearch \
+         storage/course_outputs \
+         storage/raw_data
+```
 
-1. **Préparer l'environnement et les dossiers :**
-   ```bash
-   cp front/.env.example front/.env
-   mkdir -p storage/librechat/images storage/librechat/logs storage/meilisearch storage/course_outputs storage/raw_data
-   ```
+### 4. (Optionnel) Activer le GPU NVIDIA
 
-2. **Démarrer selon votre matériel :**
-   - **Mode GPU (NVIDIA) :**
-     ```bash
-     docker compose -f docker-compose.yml -f docker-compose.gpu.yml up --build -d
-     ```
-   - **Mode Processeur (CPU & RAM) :**
-     ```bash
-     docker compose up --build -d
-     ```
+> **Par défaut, le projet tourne sur le CPU et la RAM** pour être 100% compatible sur toutes les machines sans configuration préalable.
+
+Si votre machine dispose d'une carte graphique NVIDIA et de NVIDIA Container Toolkit, activez l'accélération en une seule commande :
+
+```bash
+cp docker-compose.gpu.yml docker-compose.override.yml
+```
+
+*(Docker Compose fusionnera automatiquement ce fichier à chaque lancement).*
+
+### 5. Lancer les conteneurs
+
+Il vous suffit de lancer la commande standard :
+
+```bash
+docker compose up --build -d
+```
 
 > ⏳ *Au premier lancement, le conteneur Ollama télécharge automatiquement les modèles (`embeddinggemma` et `llama3.2:3b`), ce qui peut prendre quelques minutes selon votre connexion.*
 
