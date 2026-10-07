@@ -42,7 +42,8 @@ BuildAI combine un système de recherche hybride (BM25 via **Elasticsearch** et 
 ## ⚙️ Prérequis
 
 - [Docker](https://docs.docker.com/get-docker/) et [Docker Compose](https://docs.docker.com/compose/) installés.
-- (Recommandé) Un GPU NVIDIA avec les pilotes et [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html) pour l'inférence Ollama (sinon adapter la section `deploy` dans `docker-compose.yml` pour le mode CPU).
+- *(Optionnel mais recommandé pour les performances)* Un GPU NVIDIA avec les pilotes et [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html).
+  > **Note :** Le projet bascule **automatiquement sur le CPU et la RAM** si aucun GPU NVIDIA n'est détecté.
 
 ---
 
@@ -55,36 +56,42 @@ git clone https://github.com/Harfang1/BuildAI.git
 cd BuildAI
 ```
 
-### 2. Configurer les variables d'environnement
+### 2. Lancement automatique (Recommandé) ⚡
 
-Copiez le fichier de modèle pour LibreChat :
+Un script de démarrage intelligent détecte automatiquement votre matériel (GPU NVIDIA ou CPU/RAM), prépare les dossiers requis et lance la pile :
 
-```bash
-cp front/.env.example front/.env
-```
+- **Sous Linux / macOS :**
+  ```bash
+  ./start.sh
+  ```
+  *(Ou `./start.sh --build` pour forcer la reconstruction des images)*
 
-*(Optionnel)* Si vous souhaitez configurer des variables d'environnement spécifiques pour le serveur Python backend :
-```bash
-cp server/.env.example server/.env
-```
+- **Sous Windows :**
+  ```cmd
+  start.bat
+  ```
 
-### 3. Préparer les répertoires de stockage
+---
 
-Pour éviter les problèmes de permissions avec Docker sur Linux, créez les dossiers de stockage locaux :
+### Alternative : Lancement manuel avec Docker Compose
 
-```bash
-mkdir -p storage/librechat/images \
-         storage/librechat/logs \
-         storage/meilisearch \
-         storage/course_outputs \
-         storage/raw_data
-```
+Si vous préférez exécuter les commandes `docker compose` manuellement :
 
-### 4. Lancer les conteneurs
+1. **Préparer l'environnement et les dossiers :**
+   ```bash
+   cp front/.env.example front/.env
+   mkdir -p storage/librechat/images storage/librechat/logs storage/meilisearch storage/course_outputs storage/raw_data
+   ```
 
-```bash
-docker compose up --build -d
-```
+2. **Démarrer selon votre matériel :**
+   - **Mode GPU (NVIDIA) :**
+     ```bash
+     docker compose -f docker-compose.yml -f docker-compose.gpu.yml up --build -d
+     ```
+   - **Mode Processeur (CPU & RAM) :**
+     ```bash
+     docker compose up --build -d
+     ```
 
 > ⏳ *Au premier lancement, le conteneur Ollama télécharge automatiquement les modèles (`embeddinggemma` et `llama3.2:3b`), ce qui peut prendre quelques minutes selon votre connexion.*
 

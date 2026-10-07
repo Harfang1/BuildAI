@@ -1,0 +1,10 @@
+# Overlay pour l'activation du GPU NVIDIA (Ollama)
+services:
+  btp-rag-ollama:
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]

@@ -225,13 +225,6 @@ services:
     networks:
       - btp-rag-network
     restart: unless-stopped
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: 1
-              capabilities: [gpu]
 
   # =================================================================
   # FILE SERVER: Static file server for RAG resources
