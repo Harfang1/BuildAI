@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>BUILD AI — Synthèse Globale du Projet</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 10mm 12mm 10mm 12mm;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      background: #ffffff;
+      font-size: 8.8pt;
+      line-height: 1.38;
+    }
+
+    .page {
+      page-break-after: always;
+      height: 277mm; /* Exact A4 content height minus margins */
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .page:last-child {
+      page-break-after: auto;
+    }
+
+    /* Headers & Typography */
+    h1, h2, h3, h4 {
+      color: #0f172a;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: 18pt;
+      line-height: 1.2;
+      color: #1e1b4b;
+    }
+
+    h2 {
+      font-size: 11.5pt;
+      margin-top: 8pt;
+      margin-bottom: 4pt;
+      padding-bottom: 2pt;
+      border-bottom: 1.5px solid #cbd5e1;
+      color: #312e81;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    h3 {
+      font-size: 9.5pt;
+      margin-top: 5pt;
+      margin-bottom: 3pt;
+      color: #1e293b;
+    }
+
+    p {
+      margin-bottom: 4.5pt;
+      text-align: justify;
+    }
+
+    ul, ol {
+      margin-left: 12pt;
+      margin-bottom: 4.5pt;
+    }
+
+    li {
+      margin-bottom: 1.5pt;
+    }
+
+    /* Cover / Header Banner */
+    .header-banner {
+      background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%);
+      color: #ffffff;
+      padding: 12pt 14pt;
+      border-radius: 6pt;
+      margin-bottom: 8pt;
+    }
+
+    .header-banner h1 {
+      color: #ffffff;
+      font-size: 17pt;
+      margin-bottom: 2pt;
+    }
+
+    .header-banner .subtitle {
+      font-size: 9.5pt;
+      color: #c7d2fe;
+      font-weight: 500;
+      margin-bottom: 6pt;
+    }
+
+    .header-meta {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6pt;
+      margin-top: 6pt;
+      padding-top: 6pt;
+      border-top: 1px solid rgba(255, 255, 255, 0.25);
+      font-size: 7.8pt;
+    }
+
+    .header-meta div span {
+      display: block;
+      color: #a5b4fc;
+      text-transform: uppercase;
+      font-size: 6.5pt;
+      letter-spacing: 0.5px;
+    }
+
+    .header-meta div strong {
+      color: #ffffff;
+      font-size: 8.5pt;
+    }
+
+    /* Badges & Pills */
+    .badge {
+      display: inline-block;
+      padding: 1.5px 5px;
+      font-size: 7pt;
+      font-weight: 600;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+    .badge-primary { background: #e0e7ff; color: #3730a3; }
+    .badge-success { background: #dcfce7; color: #166534; }
+    .badge-warning { background: #fef3c7; color: #92400e; }
+    .badge-info { background: #e0f2fe; color: #0369a1; }
+
+    /* Grids & Cards */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7pt;
+      margin-bottom: 6pt;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6pt;
+      margin-bottom: 6pt;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5pt;
+      margin-bottom: 6pt;
+    }
+
+    .card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 5pt;
+      padding: 6pt 8pt;
+    }
+
+    .card-accent { border-left: 3px solid #4f46e5; }
+    .card-accent-emerald { border-left: 3px solid #10b981; }
+    .card-accent-sky { border-left: 3px solid #0284c7; }
+    .card-accent-amber { border-left: 3px solid #f59e0b; }
+
+    .card h4 {
+      font-size: 8.8pt;
+      color: #1e293b;
+      margin-bottom: 2pt;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 6pt;
+      font-size: 7.8pt;
+    }
+
+    th, td {
+      padding: 3.5pt 5pt;
+      text-align: left;
+      vertical-align: middle;
+      border: 1px solid #cbd5e1;
+    }
+
+    th {
+      background: #f1f5f9;
+      color: #0f172a;
+      font-weight: 700;
+      font-size: 7.5pt;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+
+    tr:nth-child(even) td {
+      background: #f8fafc;
+    }
+
+    /* Flow Box */
+    .flow-diagram {
+      background: #0f172a;
+      color: #e2e8f0;
+      border-radius: 5pt;
+      padding: 7pt 9pt;
+      margin-bottom: 6pt;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 7.2pt;
+      line-height: 1.35;
+      white-space: pre-wrap;
+    }
+
+    code {
+      background: #f1f5f9;
+      color: #0f172a;
+      padding: 1px 3.5px;
+      border-radius: 3px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 7.8pt;
+    }
+
+    .callout {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-left: 3px solid #2563eb;
+      border-radius: 4pt;
+      padding: 5pt 7pt;
+      margin-bottom: 6pt;
+      font-size: 8pt;
+    }
+
+    .callout-title {
+      font-weight: 700;
+      color: #1e40af;
+      margin-bottom: 1.5pt;
+    }
+
+    .footer-note {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      font-size: 7pt;
+      color: #64748b;
+      text-align: center;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 4pt;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= PAGE 1 ================= -->
+  <div class="page">
+    <div class="header-banner">
+      <h1>🏗️ PROJET BUILD AI</h1>
+      <div class="subtitle">Plateforme RAG Hybride & Générateur Multi-Agents de Cours Techniques BTP</div>
+      <p style="color: #e0e7ff; font-size: 8.2pt; margin-bottom: 0;">
+        Synthèse exécutive et technique du projet — Conception, architecture microservices conteneurisée, pipelines d'ingestion et traçabilité documentaire souveraine.
+      </p>
+      <div class="header-meta">
+        <div><span>Formation</span><strong>BUT Informatique (S5)</strong></div>
+        <div><span>Secteur Métier</span><strong>BTP & Génie Civil</strong></div>
+        <div><span>Version</span><strong>v2.0 (Production)</strong></div>
+        <div><span>Dépôt GitHub</span><strong>Harfang1 / BuildAI</strong></div>
+      </div>
+    </div>
+
+    <h2>1. Contexte Métier & Vision du Produit</h2>
+    <div class="grid-2">
+      <div class="card card-accent">
+        <h4>⚠️ Problématique du Secteur BTP</h4>
+        <p>Le secteur du Bâtiment est encadré par une documentation technique immense et normative (DTU, Eurocodes, RE2020, fiches CSTB) :</p>
+        <ul>
+          <li><strong>Masse documentaire :</strong> Manuels de 300+ pages inadaptés à une consultation rapide sur chantier ou en formation.</li>
+          <li><strong>Risque d'hallucination :</strong> Les LLM grand public inventent des formules de calcul ou des coefficients erronés.</li>
+          <li><strong>Obsolescence & Liens 404 :</strong> Les ressources web évoluent ou disparaissent, brisant la confiance technique.</li>
+        </ul>
+      </div>
+      <div class="card card-accent-emerald">
+        <h4>🎯 La Solution BUILD AI</h4>
+        <p>BUILD AI est une plateforme logicielle <strong>souveraine, locale et sécurisée</strong> :</p>
+        <ul>
+          <li><strong>RAG Hybride (BM25 + Vecteurs) :</strong> Zéro approximation sur les sigles, normes et termes métier pointus.</li>
+          <li><strong>Traçabilité Totale :</strong> Chaque réponse cite sa source avec lien direct vers le fichier PDF exact hébergé en local.</li>
+          <li><strong>Multi-Agents Autonomes :</strong> Génération automatique de cours pédagogiques complets téléchargeables en Word (.docx).</li>
+          <li><strong>Calcul Local Optimisé :</strong> Inférence sur GPU grand public (&lt; 4 Go VRAM) avec bascule CPU/RAM automatique.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>2. Profils Utilisateurs Cibles (Personas)</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h4>🧑‍🎓 Lucas (Étudiant) <span class="badge badge-info">Apprenant</span></h4>
+        <p style="font-size: 7.5pt; color: #64748b; margin-bottom: 2pt;">BUT Génie Civil / BTS Bâtiment</p>
+        <p>Interroge l'IA en langage naturel, obtient des explications claires avec formules LaTeX et consulte les extraits officiels de cours.</p>
+      </div>
+      <div class="card">
+        <h4>👨‍🏫 Marc (Formateur) <span class="badge badge-primary">Pédagogue</span></h4>
+        <p style="font-size: 7.5pt; color: #64748b; margin-bottom: 2pt;">Enseignant CFA / IUT</p>
+        <p>Génère des syllabus, des cours structurés et des fiches de révision prêtes à être exportées en Word (.docx) pour ses promotions.</p>
+      </div>
+      <div class="card">
+        <h4>👷‍♀️ Sophie (Ingénieure) <span class="badge badge-warning">Pro</span></h4>
+        <p style="font-size: 7.5pt; color: #64748b; margin-bottom: 2pt;">Conductrice de Travaux</p>
+        <p>Vérifie instantanément une règle de ferraillage ou de descente de charges avec preuve documentaire irréfutable hors-ligne.</p>
+      </div>
+    </div>
+
+    <h2>3. Cartographie Complète des 8 Microservices (Docker Compose)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Technologie</th>
+          <th>Port Hôte</th>
+          <th>Rôle & Responsabilité Clé dans la Plateforme</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>LibreChat</strong></td>
+          <td>Node.js / React</td>
+          <td><code>3081</code></td>
+          <td>Interface utilisateur web conversationnelle (agents, historique, rendu LaTeX, authentification).</td>
+        </tr>
+        <tr>
+          <td><strong>btp-rag-server</strong></td>
+          <td>FastAPI / Python 3.10</td>
+          <td><code>8080</code></td>
+          <td>API Backend centrale : orchestration RAG hybride, système multi-agents, export Word .docx.</td>
+        </tr>
+        <tr>
+          <td><strong>btp-rag-ollama</strong></td>
+          <td>Ollama (CUDA / CPU)</td>
+          <td><code>11435</code></td>
+          <td>Moteur LLM local : inférence <code>llama3.2:3b</code> et génération d'embeddings avec <code>embeddinggemma</code>.</td>
+        </tr>
+        <tr>
+          <td><strong>Elasticsearch</strong></td>
+          <td>Elasticsearch 8.x</td>
+          <td><code>9200</code></td>
+          <td>Moteur de recherche textuelle BM25 pour mots-clés exacts, acronymes et références normatives.</td>
+        </tr>
+        <tr>
+          <td><strong>Qdrant</strong></td>
+          <td>Qdrant Vector DB</td>
+          <td><code>6335</code></td>
+          <td>Base vectorielle pour recherche par similarité cosinus sur les plongements denses de documents.</td>
+        </tr>
+        <tr>
+          <td><strong>File Server</strong></td>
+          <td>Python HTTP Server</td>
+          <td><code>7701</code></td>
+          <td>Serveur de fichiers local servant les ~2 Go de PDF, manuels et cours techniques originaux.</td>
+        </tr>
+        <tr>
+          <td><strong>MongoDB</strong></td>
+          <td>MongoDB 7.0</td>
+          <td><code>27017</code></td>
+          <td>Persistance des données utilisateurs, sessions et historiques de conversation LibreChat.</td>
+        </tr>
+        <tr>
+          <td><strong>MeiliSearch</strong></td>
+          <td>MeiliSearch v1.5</td>
+          <td><code>7700</code></td>
+          <td>Moteur d'indexation plein texte ultra-rapide pour la recherche dans l'historique de chat LibreChat.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="footer-note">
+      BUILD AI — BUT Informatique (Semestre 5) — Synthèse Globale du Projet — Page 1 sur 4
+    </div>
+  </div>
+
+  <!-- ================= PAGE 2 ================= -->
+  <div class="page">
+    <h2>4. Architecture Détaillée du Moteur RAG Hybride</h2>
+    <p>
+      Le RAG purement vectoriel échoue souvent sur le BTP car les requêtes contiennent des codes normatifs précis (ex: <em>"DTU 13.12"</em>, <em>"C25/30"</em>, <em>"aciers HA FE 500"</em>) que les vecteurs denses peuvent noyer. BUILD AI combine recherche lexicale et sémantique dans un pipeline équilibré.
+    </p>
+
+    <div class="flow-diagram">
++---------------------------------------------------------------------------------------------------------+
+|                               REQUÊTE UTILISATEUR : "Comment calculer la descente de charges ?"        |
++---------------------------------------------------+-----------------------------------------------------+
+                                                    |
+                           +------------------------v------------------------+
+                           |      Prétraitement & Lemmatisation spaCy        |
+                           |        (fr_core_news_sm + Regex Markdown)       |
+                           +------------------------+------------------------+
+                                                    |
+                   +--------------------------------+--------------------------------+
+                   |                                                                 |
++------------------v------------------+                            +-----------------v-------------------+
+|     BRANCHE LEXICALE : BM25         |                            |     BRANCHE SÉMANTIQUE : DENSE      |
+|     Elasticsearch (Index BTP)       |                            |     Qdrant (Vecteurs d'embeddings)  |
+|     Score BM25 normalisé            |                            |     Score de similarité cosinus     |
+|     Poids configurable (w_bm25=0.5) |                            |     Poids configurable (w_vec=0.5)  |
++------------------+------------------+                            +-----------------+-------------------+
+                   |                                                                 |
+                   +--------------------------------+--------------------------------+
+                                                    |
+                           +------------------------v------------------------+
+                           |        FUSION DES SCORES & RERANKING            |
+                           |   Score_Final = w_bm25*S_bm25 + w_vec*S_vector  |
+                           |   Filtrage des Top-K Chunks les plus pertinents |
+                           +------------------------+------------------------+
+                                                    |
+                           +------------------------v------------------------+
+                           |   RÉSOLUTION DES SOURCES & CITATIONS PDF        |
+                           |   Remplacement [1] -> Lien pérenne File Server  |
+                           +------------------------+------------------------+
+                                                    |
+                           +------------------------v------------------------+
+                           |      GÉNÉRATION STREAMING LLM (Ollama)          |
+                           |   Prompt Expert BTP + Contexte + Thinking Box   |
+                           +-------------------------------------------------+
+    </div>
+
+    <div class="grid-2">
+      <div class="card card-accent-sky">
+        <h4>🔍 Lemmatisation Française (spaCy)</h4>
+        <p>Le module <code>hybrid_retriever.py</code> nettoie le markdown et applique une lemmatisation complète via <strong>spaCy</strong> (<code>fr_core_news_sm</code>). Ainsi, <em>"fondations superficielles"</em> et <em>"fondation superficielle"</em> sont ramenées à leur racine commune pour maximiser le rappel.</p>
+      </div>
+      <div class="card card-accent-emerald">
+        <h4>📄 Traçabilité & Zéro Liens 404</h4>
+        <p>Les sources externes scrapées sont conservées localement dans <code>storage/raw_data/</code>. Grâce au fichier de correspondance <code>global_hashes.json</code>, chaque citation <code>[1]</code> générée par le LLM est automatiquement liée à l'URL locale du PDF officiel.</p>
+      </div>
+    </div>
+
+    <h2>5. Pipeline d'Ingestion & Préparation du Corpus Documentaire</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h4>🌐 1. Scraping Ciblé</h4>
+        <p>Collecte automatisée via des scripts Python spécialisés (<code>scrapping/scrape_article.py</code>, <code>scrape_btp_cours.py</code>) extrayant articles de génie civil, calculs de structures et documents techniques PDF.</p>
+      </div>
+      <div class="card">
+        <h4>🧹 2. Filtrage & Nettoyage</h4>
+        <p>Suppression des bannières, menus, publicités et contenus parasites. Extraction textuelle des PDF et conservation des métadonnées (titres, dates, auteurs, chapitres).</p>
+      </div>
+      <div class="card">
+        <h4>✂️ 3. Chunking & Indexation</h4>
+        <p>Découpage sémantique en morceaux de 500 à 1000 caractères avec chevauchement. Vectorisation avec <code>embeddinggemma</code> et insertion simultanée dans Elasticsearch et Qdrant.</p>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-title">💡 Performance d'Indexation</div>
+      Le corpus rassemble plus de <strong>2 Go de documents techniques</strong> (manuels de coffrage, dimensionnement d'ouvrages d'art, mécanique des sols, fiches DTU). La double indexation permet d'atteindre un temps de recherche moyen inférieur à <strong>150 ms</strong> avant transmission au modèle de langage.
+    </div>
+
+    <div class="footer-note">
+      BUILD AI — BUT Informatique (Semestre 5) — Synthèse Globale du Projet — Page 2 sur 4
+    </div>
+  </div>
+
+  <!-- ================= PAGE 3 ================= -->
+  <div class="page">
+    <h2>6. Moteur Multi-Agents de Génération Automatique de Cours</h2>
+    <p>
+      Pour créer des cours complets et structurés sur des sujets techniques (ex: <em>"Les types de fondations et leur mise en œuvre"</em>), BUILD AI mobilise <strong>trois agents autonomes spécialisés</strong> orchestrés par la classe <code>MultiAgentOrchestrator</code>.
+    </p>
+
+    <div class="grid-3">
+      <div class="card card-accent">
+        <h4>1. Retriever Agent</h4>
+        <p><strong>Rôle :</strong> Collecteur de savoir métier.</p>
+        <p>Décompose le sujet en plusieurs requêtes ciblées (définitions, calculs, pathologies, normes). Interroge le moteur hybride et assemble la base brute de connaissances.</p>
+      </div>
+      <div class="card card-accent-amber">
+        <h4>2. Enhancer Agent</h4>
+        <p><strong>Rôle :</strong> Critique & Enrichisseur.</p>
+        <p>Évalue la complétude des connaissances, identifie les zones d'ombre ou lacunes techniques et lance des boucles itératives de recherche ciblée pour combler les manques.</p>
+      </div>
+      <div class="card card-accent-emerald">
+        <h4>3. Generator Agent</h4>
+        <p><strong>Rôle :</strong> Rédacteur Pédagogique.</p>
+        <p>Structure le syllabus, rédige les modules détaillés, intègre les formules et génère les fichiers finaux aux formats <strong>Markdown</strong> et <strong>Microsoft Word (.docx)</strong>.</p>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-title">⚡ Innovation Technique : Streaming Temps Réel avec "Thinking Box" et Heartbeats</div>
+      La génération d'un cours complet prend entre 45 et 120 secondes en local. Pour éviter que le navigateur ou LibreChat ne coupe la connexion (timeout HTTP), BUILD AI a conçu une architecture réactive à trois piliers :
+      <ul style="margin-top: 3pt;">
+        <li><strong>Capture non bloquante :</strong> <code>StreamingPrintCapture</code> intercepte en direct les logs console émis par chaque agent.</li>
+        <li><strong>Heartbeats SSE (10s) :</strong> <code>async_stream_wrapper_with_heartbeat</code> maintient la connexion ouverte en envoyant des pulsations régulières.</li>
+        <li><strong>Thinking Box :</strong> L'utilisateur voit le raisonnement des agents défiler en temps réel dans l'interface avant de recevoir le document final téléchargeable.</li>
+      </ul>
+    </div>
+
+    <h2>7. Architecture Logicielle Modulaire du Serveur Backend (FastAPI)</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h4>📂 Organisation du Code Backend (<code>server/</code>)</h4>
+        <ul>
+          <li><code>app/main.py</code> : Factory de l'application FastAPI, middlewares CORS, routage.</li>
+          <li><code>app/api/routes/rag.py</code> : Endpoints d'interrogation et streaming RAG.</li>
+          <li><code>app/api/routes/course.py</code> : Endpoints de génération de cours et téléchargement.</li>
+          <li><code>app/core/auth.py</code> : Contrôle d'accès par Bearer Tokens configurés dans l'environnement.</li>
+          <li><code>app/services/</code> : Logique métier asynchrone (générateurs SSE, threading).</li>
+          <li><code>course_build_agents/</code> : Classes des 3 agents et orchestrateur.</li>
+          <li><code>retrivers/hybrid_retriever.py</code> : Moteur de recherche hybride BM25 + Qdrant.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>🔌 Spécification des Endpoints d'API</h4>
+        <table>
+          <thead>
+            <tr><th>Méthode & Route</th><th>Fonction</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>GET /rag/models</code></td><td>Liste les modèles RAG disponibles (Ollama).</td></tr>
+            <tr><td><code>POST /rag/api/chat/completions</code></td><td>Discussion RAG en streaming (compatible OpenAI).</td></tr>
+            <tr><td><code>GET /course/models</code></td><td>Liste les modèles de génération de cours.</td></tr>
+            <tr><td><code>POST /course/api/chat/completions</code></td><td>Lancement de la génération multi-agents.</td></tr>
+            <tr><td><code>GET /course/download/{file}</code></td><td>Téléchargement direct du fichier DOCX généré.</td></tr>
+            <tr><td><code>GET /docs</code></td><td>Documentation interactive Swagger UI.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      BUILD AI — BUT Informatique (Semestre 5) — Synthèse Globale du Projet — Page 3 sur 4
+    </div>
+  </div>
+
+  <!-- ================= PAGE 4 ================= -->
+  <div class="page">
+    <h2>8. Gestion de l'Infrastructure Matérielle (GPU NVIDIA vs CPU/RAM)</h2>
+    <div class="card card-accent-emerald" style="margin-bottom: 6pt;">
+      <h4>⚙️ Résolution Native du Déploiement Matériel Hétérogène</h4>
+      <p>
+        Un défi majeur du projet était de concilier une machine de développement équipée d'un <strong>GPU NVIDIA RTX 3050 (4 Go VRAM)</strong> avec des machines d'évaluation ne possédant que du <strong>CPU et de la RAM</strong> :
+      </p>
+      <ul>
+        <li><strong>Contrainte Docker :</strong> Déclarer <code>driver: nvidia</code> dans <code>docker-compose.yml</code> fait crasher le démarrage sur les PC sans GPU. Le supprimer bride l'exécution sur GPU.</li>
+        <li><strong>Solution mise en place :</strong> Le fichier <code>docker-compose.yml</code> principal est universel (CPU/RAM). Un fichier local <code>docker-compose.override.yml</code> (exclu de Git) active l'accélération matérielle sur la machine GPU.</li>
+        <li><strong>Expérience développeur :</strong> Sur toutes les machines, la simple commande standard <code>docker compose up -d</code> fonctionne immédiatement sans erreur.</li>
+      </ul>
+    </div>
+
+    <h2>9. Matrice Synthétique des User Stories & Statut (Cadre Agile MoSCoW)</h2>
+    <table style="font-size: 7.5pt; margin-bottom: 6pt;">
+      <thead>
+        <tr>
+          <th style="width: 14%;">Code US</th>
+          <th style="width: 44%;">Intitulé Fonctionnel</th>
+          <th style="width: 22%;">Epic Associé</th>
+          <th style="width: 10%;">Priorité</th>
+          <th style="width: 10%;">Statut</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>US-RAG-01</strong></td>
+          <td>Interrogation technique en langage naturel</td>
+          <td>Epic 1 : RAG Hybride</td>
+          <td><span class="badge badge-primary">Must</span></td>
+          <td><span class="badge badge-success">Terminé</span></td>
+        </tr>
+        <tr>
+          <td><strong>US-RAG-02</strong></td>
+          <td>Recherche combinée lexicale et sémantique (BM25 + Vecteurs)</td>
+          <td>Epic 1 : RAG Hybride</td>
+          <td><span class="badge badge-primary">Must</span></td>
+          <td><span class="badge badge-success">Terminé</span></td>
+        </tr>
+        <tr>
+          <td><strong>US-RAG-03</strong></td>
+          <td>Streaming temps réel & boîte de raisonnement (Thinking Box)</td>
+          <td>Epic 1 : RAG Hybride</td>
+          <td><span class="badge badge-info">Should</span></td>
+          <td><span class="badge badge-success">Terminé</span></td>
+        </tr>
+        <tr>
+          <td><strong>US-DOC-01</strong></td>
+          <td>Citations séquentielles et sources vérifiables</td>
+          <td>Epic 2 : Traçabilité</td>
+          <td><span class="badge badge-primary">Must</span></td>
+          <td><span class="badge badge-success">Terminé</span></td>
+        </tr>
+        <tr>
+          <td><strong>US-DOC-02</strong></td>
+          <td>Serveur de fichiers local et consultation PDF pérenne</td>
+          <td>Epic 2 : Traçabilité</td>
+          <td><span class="badge badge-primary">Must</span></td>
+          <td><span class="badge badge-success">Terminé</span></td>
+        </tr>
+        <tr>
+          <td><strong>US-CRS-01</strong></td>
+          <td>Génération de plan de cours modulaire par agents</td>
+          <td>Epic 3 : Course Gen</td>
+          <td><span class="badge badge-info">Should</span></td>
+          <td><span class="badge badge-success">Terminé</span></td>
+        </tr>
+        <tr>
+          <td><strong>US-CRS-03</strong></td>
+          <td>Exportation des cours au format Word (.docx) & Markdown</td>
+          <td>Epic 3 : Course Gen</td>
+          <td><span class="badge badge-warning">Could</span></td>
+          <td><span class="badge badge-success">Terminé</span></td>
+        </tr>
+        <tr>
+          <td><strong>US-QCM-01</strong></td>
+          <td>Génération automatisée de QCM à partir d'un sujet BTP</td>
+          <td>Epic 4 : QCM & Éval</td>
+          <td><span class="badge badge-info">Should</span></td>
+          <td><span class="badge badge-warning">En cours</span></td>
+        </tr>
+        <tr>
+          <td><strong>US-ING-04</strong></td>
+          <td>Double indexation synchronisée Elasticsearch & Qdrant</td>
+          <td>Epic 5 : Ingestion</td>
+          <td><span class="badge badge-primary">Must</span></td>
+          <td><span class="badge badge-success">Terminé</span></td>
+        </tr>
+        <tr>
+          <td><strong>US-UI-01</strong></td>
+          <td>Interface web LibreChat personnalisée et conviviale</td>
+          <td>Epic 6 : Interface UI</td>
+          <td><span class="badge badge-primary">Must</span></td>
+          <td><span class="badge badge-success">Terminé</span></td>
+        </tr>
+        <tr>
+          <td><strong>US-INF-02</strong></td>
+          <td>Accélération GPU NVIDIA CUDA & Fallback CPU/RAM</td>
+          <td>Epic 7 : Infra & GPU</td>
+          <td><span class="badge badge-primary">Must</span></td>
+          <td><span class="badge badge-success">Terminé</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>10. Guide de Démarrage en 3 Commandes</h2>
+    <div class="grid-3" style="margin-bottom: 6pt;">
+      <div class="card">
+        <h4>1. Préparation</h4>
+        <code>cp front/.env.example front/.env</code><br>
+        <code>mkdir -p storage/raw_data</code>
+      </div>
+      <div class="card">
+        <h4>2. Lancement</h4>
+        <code>docker compose up --build -d</code><br>
+        <span style="font-size: 7.2pt; color: #64748b;">(GPU auto-activé si override présent)</span>
+      </div>
+      <div class="card">
+        <h4>3. Compte Admin</h4>
+        <code>docker compose exec librechat npm run create-user</code><br>
+        <span style="font-size: 7.2pt; color: #64748b;">Accès sur http://localhost:3081</span>
+      </div>
+    </div>
+
+    <h2>11. Bilan & Perspectives Futures</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h4>🏆 Points Forts Validés</h4>
+        <ul>
+          <li>Souveraineté totale : aucune donnée ne quitte le réseau local, zéro coût API.</li>
+          <li>Rigueur BTP : élimination des hallucinations grâce au score hybride et aux citations PDF.</li>
+          <li>Génération pédagogique prête à l'emploi avec export direct Word (.docx).</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>🔮 Perspectives Semestre 6</h4>
+        <ul>
+          <li>Finalisation du module de génération de QCM interactifs auto-corrigés.</li>
+          <li>Intégration de modèles de vision (VLM) pour l'analyse de plans de coffrage et ferraillage.</li>
+          <li>Connecteurs ENT / LMS (Moodle, Canvas) pour la distribution directe des cours.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      BUILD AI — BUT Informatique (Semestre 5) — Synthèse Globale du Projet — Page 4 sur 4 — Dépôt : github.com/Harfang1/BuildAI
+    </div>
+  </div>
+
+</body>
+</html>
