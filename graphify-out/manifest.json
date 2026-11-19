@@ -1,0 +1,482 @@
+{
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\elasticsearch\\entrypoint.sh": {
+    "mtime": 1795109168.5343235,
+    "ast_hash": "2d3f7e90f5d534538c2a025464d46b84",
+    "semantic_hash": "2d3f7e90f5d534538c2a025464d46b84"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\fileserver\\main.py": {
+    "mtime": 1795106068.904256,
+    "ast_hash": "c5dcdbfc3f33f022965ec9b9f60cc90e",
+    "semantic_hash": "c5dcdbfc3f33f022965ec9b9f60cc90e"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\.claude\\settings.local.json": {
+    "mtime": 1795106068.906261,
+    "ast_hash": "1360de05bf5bd23555033e575fe31a25",
+    "semantic_hash": "1360de05bf5bd23555033e575fe31a25"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\app\\__init__.py": {
+    "mtime": 1795106068.908261,
+    "ast_hash": "f1a4aa62cc5a63f1e06f40db5f54aaac",
+    "semantic_hash": "f1a4aa62cc5a63f1e06f40db5f54aaac"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\app\\api\\__init__.py": {
+    "mtime": 1795106068.9092607,
+    "ast_hash": "8be059f7b093bf7786e23b8d47240cd4",
+    "semantic_hash": "8be059f7b093bf7786e23b8d47240cd4"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\app\\api\\routes\\__init__.py": {
+    "mtime": 1795106068.910261,
+    "ast_hash": "d36b5402c83bb73660c93a9a0a91d15c",
+    "semantic_hash": "d36b5402c83bb73660c93a9a0a91d15c"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\app\\api\\routes\\course.py": {
+    "mtime": 1795106068.910261,
+    "ast_hash": "d2de6105c7ec28525e4f3a08cc637466",
+    "semantic_hash": "d2de6105c7ec28525e4f3a08cc637466"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\app\\api\\routes\\rag.py": {
+    "mtime": 1795106068.910261,
+    "ast_hash": "b04ae82061bf947d679a37c84563e023",
+    "semantic_hash": "b04ae82061bf947d679a37c84563e023"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\app\\core\\__init__.py": {
+    "mtime": 1795106068.9117644,
+    "ast_hash": "3def002fa38f835bf6a6969edc6405df",
+    "semantic_hash": "3def002fa38f835bf6a6969edc6405df"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\app\\core\\auth.py": {
+    "mtime": 1795106068.9117644,
+    "ast_hash": "0a5cd3a51e758accd20e714fc7fb911a",
+    "semantic_hash": "0a5cd3a51e758accd20e714fc7fb911a"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\app\\main.py": {
+    "mtime": 1795106068.9117644,
+    "ast_hash": "265b4bdbf4c49f8bc0862e01c23d7345",
+    "semantic_hash": "265b4bdbf4c49f8bc0862e01c23d7345"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\app\\models\\__init__.py": {
+    "mtime": 1795106068.9132679,
+    "ast_hash": "5cd7a83f46d9e3b29d4092a9de95bf14",
+    "semantic_hash": "5cd7a83f46d9e3b29d4092a9de95bf14"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\app\\models\\schemas.py": {
+    "mtime": 1795106068.9132679,
+    "ast_hash": "79505238e45c4a0b6d1bc547210d52bd",
+    "semantic_hash": "79505238e45c4a0b6d1bc547210d52bd"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\app\\services\\__init__.py": {
+    "mtime": 1795106068.9142718,
+    "ast_hash": "49013929f7ac5a81160d7ec40612a914",
+    "semantic_hash": "49013929f7ac5a81160d7ec40612a914"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\app\\services\\course_service.py": {
+    "mtime": 1795106068.9142718,
+    "ast_hash": "cb55d3f1b4e75ce4ee85d371d406daca",
+    "semantic_hash": "cb55d3f1b4e75ce4ee85d371d406daca"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\app\\services\\rag_service.py": {
+    "mtime": 1795106068.9152763,
+    "ast_hash": "f7e262eb4a404c0f72984c8a6c874f4d",
+    "semantic_hash": "f7e262eb4a404c0f72984c8a6c874f4d"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\config_loader.py": {
+    "mtime": 1795106068.9162767,
+    "ast_hash": "524c0af6300d4d2041af7cbe094dc959",
+    "semantic_hash": "524c0af6300d4d2041af7cbe094dc959"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\course_build_agents\\__init__.py": {
+    "mtime": 1795106068.9162767,
+    "ast_hash": "e9007e6bd761726e2bce9caf72c48a7d",
+    "semantic_hash": "e9007e6bd761726e2bce9caf72c48a7d"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\course_build_agents\\course_generator.py": {
+    "mtime": 1795106068.9172757,
+    "ast_hash": "243f12b43f61624950ed1103da36f232",
+    "semantic_hash": "243f12b43f61624950ed1103da36f232"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\course_build_agents\\example.py": {
+    "mtime": 1795106068.9172757,
+    "ast_hash": "24915e6f03f3d46f99de026f03d75f95",
+    "semantic_hash": "24915e6f03f3d46f99de026f03d75f95"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\course_build_agents\\knowledge_enhancer.py": {
+    "mtime": 1795106068.918275,
+    "ast_hash": "7777f779eca3cd40edacaa21974c07fb",
+    "semantic_hash": "7777f779eca3cd40edacaa21974c07fb"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\course_build_agents\\knowledge_retriever.py": {
+    "mtime": 1795106068.918275,
+    "ast_hash": "b3395bbd05ca9938c0c950004e8fca54",
+    "semantic_hash": "b3395bbd05ca9938c0c950004e8fca54"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\course_build_agents\\orchestrator.py": {
+    "mtime": 1795106068.918275,
+    "ast_hash": "b605a068d3abd231297b500110931f33",
+    "semantic_hash": "b605a068d3abd231297b500110931f33"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\course_build_agents\\orchestrator_with_logging.py": {
+    "mtime": 1795106068.9192762,
+    "ast_hash": "02f9249e621de0d73512e9d846490faf",
+    "semantic_hash": "02f9249e621de0d73512e9d846490faf"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\course_build_agents\\utils.py": {
+    "mtime": 1795106068.9192762,
+    "ast_hash": "ebdafb5505ef06dc92850dea5f4a8c7a",
+    "semantic_hash": "ebdafb5505ef06dc92850dea5f4a8c7a"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\main.py": {
+    "mtime": 1795106068.921781,
+    "ast_hash": "478c356122d0cec09166bb192c8fccfa",
+    "semantic_hash": "478c356122d0cec09166bb192c8fccfa"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\rag_engine\\rag.py": {
+    "mtime": 1795106068.9232867,
+    "ast_hash": "db802b20a6782a7933c5fc57ce5cef31",
+    "semantic_hash": "db802b20a6782a7933c5fc57ce5cef31"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\rag_server_old.py": {
+    "mtime": 1795106068.9238033,
+    "ast_hash": "63128ac3bb283323e069f7afd3ca2da8",
+    "semantic_hash": "63128ac3bb283323e069f7afd3ca2da8"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\retrivers\\hybrid_retriever.py": {
+    "mtime": 1795106068.9248085,
+    "ast_hash": "2e749a8648ec0257ba2fa167a8b02cbb",
+    "semantic_hash": "2e749a8648ec0257ba2fa167a8b02cbb"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\report_raw_data_files.py": {
+    "mtime": 1795106068.9278083,
+    "ast_hash": "fb4aa74eb019bf9821944f40f3ab43e9",
+    "semantic_hash": "fb4aa74eb019bf9821944f40f3ab43e9"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\scripts\\index_mongo_to_elastic.py": {
+    "mtime": 1795106071.2940025,
+    "ast_hash": "9ce49d02fcafc0dc913973beba1ff997",
+    "semantic_hash": "9ce49d02fcafc0dc913973beba1ff997"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\scripts\\index_raw_data_to_qdrant_and_es.py": {
+    "mtime": 1795106071.2940025,
+    "ast_hash": "a8e9dea5b2e562286f1b4607cc179ba8",
+    "semantic_hash": "a8e9dea5b2e562286f1b4607cc179ba8"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\scripts\\ingest_scrapping_raw_to_mongo.py": {
+    "mtime": 1795106071.2950015,
+    "ast_hash": "401b5ee0641e2b5a97b4ed0e4dc79fd6",
+    "semantic_hash": "401b5ee0641e2b5a97b4ed0e4dc79fd6"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\scripts\\ingest_storage_to_mongo.py": {
+    "mtime": 1795106071.2950015,
+    "ast_hash": "d32941f8781fbe4673efdd420013636c",
+    "semantic_hash": "d32941f8781fbe4673efdd420013636c"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\scripts\\report_raw_data_files.py": {
+    "mtime": 1795106071.296002,
+    "ast_hash": "fb4aa74eb019bf9821944f40f3ab43e9",
+    "semantic_hash": "fb4aa74eb019bf9821944f40f3ab43e9"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\.claude\\settings.local.json": {
+    "mtime": 1795106071.2970006,
+    "ast_hash": "1360de05bf5bd23555033e575fe31a25",
+    "semantic_hash": "1360de05bf5bd23555033e575fe31a25"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\app\\__init__.py": {
+    "mtime": 1795106071.300001,
+    "ast_hash": "f1a4aa62cc5a63f1e06f40db5f54aaac",
+    "semantic_hash": "f1a4aa62cc5a63f1e06f40db5f54aaac"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\app\\api\\__init__.py": {
+    "mtime": 1795106071.300001,
+    "ast_hash": "8be059f7b093bf7786e23b8d47240cd4",
+    "semantic_hash": "8be059f7b093bf7786e23b8d47240cd4"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\app\\api\\routes\\__init__.py": {
+    "mtime": 1795106071.3010004,
+    "ast_hash": "d36b5402c83bb73660c93a9a0a91d15c",
+    "semantic_hash": "d36b5402c83bb73660c93a9a0a91d15c"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\app\\api\\routes\\course.py": {
+    "mtime": 1795106071.3010004,
+    "ast_hash": "d2de6105c7ec28525e4f3a08cc637466",
+    "semantic_hash": "d2de6105c7ec28525e4f3a08cc637466"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\app\\api\\routes\\rag.py": {
+    "mtime": 1795106071.3010004,
+    "ast_hash": "da54df4188915df789f35ebc73c97305",
+    "semantic_hash": "da54df4188915df789f35ebc73c97305"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\app\\core\\__init__.py": {
+    "mtime": 1795106071.3010004,
+    "ast_hash": "3def002fa38f835bf6a6969edc6405df",
+    "semantic_hash": "3def002fa38f835bf6a6969edc6405df"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\app\\core\\auth.py": {
+    "mtime": 1795106071.302504,
+    "ast_hash": "0a5cd3a51e758accd20e714fc7fb911a",
+    "semantic_hash": "0a5cd3a51e758accd20e714fc7fb911a"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\app\\main.py": {
+    "mtime": 1795106071.3030176,
+    "ast_hash": "265b4bdbf4c49f8bc0862e01c23d7345",
+    "semantic_hash": "265b4bdbf4c49f8bc0862e01c23d7345"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\app\\models\\__init__.py": {
+    "mtime": 1795106071.3030176,
+    "ast_hash": "5cd7a83f46d9e3b29d4092a9de95bf14",
+    "semantic_hash": "5cd7a83f46d9e3b29d4092a9de95bf14"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\app\\models\\schemas.py": {
+    "mtime": 1795106071.3040242,
+    "ast_hash": "79505238e45c4a0b6d1bc547210d52bd",
+    "semantic_hash": "79505238e45c4a0b6d1bc547210d52bd"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\app\\services\\__init__.py": {
+    "mtime": 1795106071.3050227,
+    "ast_hash": "49013929f7ac5a81160d7ec40612a914",
+    "semantic_hash": "49013929f7ac5a81160d7ec40612a914"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\app\\services\\course_service.py": {
+    "mtime": 1795106071.3050227,
+    "ast_hash": "cb55d3f1b4e75ce4ee85d371d406daca",
+    "semantic_hash": "cb55d3f1b4e75ce4ee85d371d406daca"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\app\\services\\rag_service.py": {
+    "mtime": 1795106071.3060236,
+    "ast_hash": "d00dc829f80b4dcb9f0950362d4c189b",
+    "semantic_hash": "d00dc829f80b4dcb9f0950362d4c189b"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\config_loader.py": {
+    "mtime": 1795106071.3060236,
+    "ast_hash": "0938442dc1de272701f65855c6f446f6",
+    "semantic_hash": "0938442dc1de272701f65855c6f446f6"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\course_build_agents\\__init__.py": {
+    "mtime": 1795106071.307023,
+    "ast_hash": "e9007e6bd761726e2bce9caf72c48a7d",
+    "semantic_hash": "e9007e6bd761726e2bce9caf72c48a7d"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\course_build_agents\\course_generator.py": {
+    "mtime": 1795106071.3080225,
+    "ast_hash": "243f12b43f61624950ed1103da36f232",
+    "semantic_hash": "243f12b43f61624950ed1103da36f232"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\course_build_agents\\example.py": {
+    "mtime": 1795106071.3080225,
+    "ast_hash": "24915e6f03f3d46f99de026f03d75f95",
+    "semantic_hash": "24915e6f03f3d46f99de026f03d75f95"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\course_build_agents\\knowledge_enhancer.py": {
+    "mtime": 1795106071.3080225,
+    "ast_hash": "7777f779eca3cd40edacaa21974c07fb",
+    "semantic_hash": "7777f779eca3cd40edacaa21974c07fb"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\course_build_agents\\knowledge_retriever.py": {
+    "mtime": 1795106071.3090224,
+    "ast_hash": "b3395bbd05ca9938c0c950004e8fca54",
+    "semantic_hash": "b3395bbd05ca9938c0c950004e8fca54"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\course_build_agents\\orchestrator.py": {
+    "mtime": 1795106071.3090224,
+    "ast_hash": "b605a068d3abd231297b500110931f33",
+    "semantic_hash": "b605a068d3abd231297b500110931f33"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\course_build_agents\\orchestrator_with_logging.py": {
+    "mtime": 1795106071.3100226,
+    "ast_hash": "02f9249e621de0d73512e9d846490faf",
+    "semantic_hash": "02f9249e621de0d73512e9d846490faf"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\course_build_agents\\utils.py": {
+    "mtime": 1795106071.3100226,
+    "ast_hash": "b4524dc1fcadd7e97e83c6522b728cde",
+    "semantic_hash": "b4524dc1fcadd7e97e83c6522b728cde"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\main.py": {
+    "mtime": 1795106071.3130226,
+    "ast_hash": "478c356122d0cec09166bb192c8fccfa",
+    "semantic_hash": "478c356122d0cec09166bb192c8fccfa"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\rag_engine\\global_hashes.json": {
+    "mtime": 1795106071.3150387,
+    "ast_hash": "de8e14e60fa32d51d00298126f5f97d1",
+    "semantic_hash": "de8e14e60fa32d51d00298126f5f97d1"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\rag_engine\\rag.py": {
+    "mtime": 1795106071.3150387,
+    "ast_hash": "ccdf91a595582402d3da6478e76c2945",
+    "semantic_hash": "ccdf91a595582402d3da6478e76c2945"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\rag_server_old.py": {
+    "mtime": 1795106071.3150387,
+    "ast_hash": "63128ac3bb283323e069f7afd3ca2da8",
+    "semantic_hash": "63128ac3bb283323e069f7afd3ca2da8"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\retrivers\\hybrid_retriever.py": {
+    "mtime": 1795106071.3170407,
+    "ast_hash": "c8950a90e9380b6d0e7c2a63559f057e",
+    "semantic_hash": "c8950a90e9380b6d0e7c2a63559f057e"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\test-rag-simple.ps1": {
+    "mtime": 1795106071.3170407,
+    "ast_hash": "ce482551e0f98f467024f07af322d6eb",
+    "semantic_hash": "ce482551e0f98f467024f07af322d6eb"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\test-rag.ps1": {
+    "mtime": 1795106071.318039,
+    "ast_hash": "d02b321cc5987c3da3cc981d766b2a29",
+    "semantic_hash": "d02b321cc5987c3da3cc981d766b2a29"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\test_en_rag.json": {
+    "mtime": 1795106071.318039,
+    "ast_hash": "de15fd8dafccf2ca767966c178b8017e",
+    "semantic_hash": "de15fd8dafccf2ca767966c178b8017e"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\test_en_small_talk.json": {
+    "mtime": 1795106071.319039,
+    "ast_hash": "fb3537cbcefc5296979539018444c847",
+    "semantic_hash": "fb3537cbcefc5296979539018444c847"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\test_es_rag.json": {
+    "mtime": 1795106071.319039,
+    "ast_hash": "cf1f54c31961a496de26d171b5f05206",
+    "semantic_hash": "cf1f54c31961a496de26d171b5f05206"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\test_es_small_talk.json": {
+    "mtime": 1795106071.319039,
+    "ast_hash": "30db094036cf7675c30901f773c49aea",
+    "semantic_hash": "30db094036cf7675c30901f773c49aea"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\test_rag_query.json": {
+    "mtime": 1795106071.319039,
+    "ast_hash": "f749fb2cacda45beaa3766997a7e18da",
+    "semantic_hash": "f749fb2cacda45beaa3766997a7e18da"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\test_small_talk.json": {
+    "mtime": 1795106071.3204627,
+    "ast_hash": "ecf54ba5aa84153980bb945f6591355f",
+    "semantic_hash": "ecf54ba5aa84153980bb945f6591355f"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\BuildAI_Synthese_Projet.html": {
+    "mtime": 1795106068.1609735,
+    "ast_hash": "ee725d84d1939528723a7ebbbd8b8687",
+    "semantic_hash": "ee725d84d1939528723a7ebbbd8b8687"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\README.md": {
+    "mtime": 1795106068.1644843,
+    "ast_hash": "f41319b75f417e79cd549dee0138e13a",
+    "semantic_hash": "f41319b75f417e79cd549dee0138e13a"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\USER_STORIES.md": {
+    "mtime": 1795106068.1654832,
+    "ast_hash": "d513d6c8e2d680dd1b9420e376b4e014",
+    "semantic_hash": "d513d6c8e2d680dd1b9420e376b4e014"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\create_user.txt": {
+    "mtime": 1795106068.1654832,
+    "ast_hash": "1e880e64c710499bc90f6e738dde84ba",
+    "semantic_hash": "1e880e64c710499bc90f6e738dde84ba"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\docker-compose.gpu.yml": {
+    "mtime": 1795106068.1664839,
+    "ast_hash": "efb3b7f25115561ce52367ce427a661b",
+    "semantic_hash": "efb3b7f25115561ce52367ce427a661b"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\docker-compose.yml": {
+    "mtime": 1795106068.1664839,
+    "ast_hash": "f80f87939be92a3441b6b85182581129",
+    "semantic_hash": "f80f87939be92a3441b6b85182581129"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\dockerold.yml": {
+    "mtime": 1795106068.1664839,
+    "ast_hash": "2026b346bc4b9273846482faa7d85ed8",
+    "semantic_hash": "2026b346bc4b9273846482faa7d85ed8"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\fileserver\\README.md": {
+    "mtime": 1795106068.9017487,
+    "ast_hash": "9fd6fc1d7675819b649f20f6e19fdb7e",
+    "semantic_hash": "9fd6fc1d7675819b649f20f6e19fdb7e"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\fileserver\\docker-compose.yml": {
+    "mtime": 1795106068.903252,
+    "ast_hash": "bba7171b530ddce3c0a93cb2da259f2e",
+    "semantic_hash": "bba7171b530ddce3c0a93cb2da259f2e"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\fileserver\\requirements.txt": {
+    "mtime": 1795106068.904256,
+    "ast_hash": "cf4b868e89952dcb357447be98144ce6",
+    "semantic_hash": "cf4b868e89952dcb357447be98144ce6"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\front\\librechat.yaml": {
+    "mtime": 1795106068.9052608,
+    "ast_hash": "a4de79254e771591bedc4c0566a5f020",
+    "semantic_hash": "a4de79254e771591bedc4c0566a5f020"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\graphify-out\\converted\\USER_STORIES_f6f38e35.md": {
+    "mtime": 1795109998.1972675,
+    "ast_hash": "05bb97a0a8d2577d526af75cdb21a468",
+    "semantic_hash": "05bb97a0a8d2577d526af75cdb21a468"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\README.md": {
+    "mtime": 1795106068.908261,
+    "ast_hash": "9849942cdf003ca14cac6c82459af698",
+    "semantic_hash": "9849942cdf003ca14cac6c82459af698"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\docker-compose.yml": {
+    "mtime": 1795106068.9202764,
+    "ast_hash": "7b7d714b877bdb2c3d3b447ddb7b0da4",
+    "semantic_hash": "7b7d714b877bdb2c3d3b447ddb7b0da4"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\documentation\\ARCHITECTURE.md": {
+    "mtime": 1795106068.9202764,
+    "ast_hash": "caa51f33611a65df9a7fc1a54fcf3177",
+    "semantic_hash": "caa51f33611a65df9a7fc1a54fcf3177"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\documentation\\MIGRATION_GUIDE.md": {
+    "mtime": 1795106068.921781,
+    "ast_hash": "0b8e00d7e87aaba284dff57dd41cddd7",
+    "semantic_hash": "0b8e00d7e87aaba284dff57dd41cddd7"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\documentation\\STREAMING_ARCHITECTURE.md": {
+    "mtime": 1795106068.921781,
+    "ast_hash": "6f10c5c19247306643c7c1bb72f98c47",
+    "semantic_hash": "6f10c5c19247306643c7c1bb72f98c47"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\old_server\\requirements.txt": {
+    "mtime": 1795106068.9238033,
+    "ast_hash": "cb7e2208b9f2174e44b459f54a15c345",
+    "semantic_hash": "cb7e2208b9f2174e44b459f54a15c345"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\README.md": {
+    "mtime": 1795106071.2990012,
+    "ast_hash": "9849942cdf003ca14cac6c82459af698",
+    "semantic_hash": "9849942cdf003ca14cac6c82459af698"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\docker-compose.yml": {
+    "mtime": 1795106071.3100226,
+    "ast_hash": "7b7d714b877bdb2c3d3b447ddb7b0da4",
+    "semantic_hash": "7b7d714b877bdb2c3d3b447ddb7b0da4"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\documentation\\ARCHITECTURE.md": {
+    "mtime": 1795106071.3110225,
+    "ast_hash": "caa51f33611a65df9a7fc1a54fcf3177",
+    "semantic_hash": "caa51f33611a65df9a7fc1a54fcf3177"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\documentation\\MIGRATION_GUIDE.md": {
+    "mtime": 1795106071.3120224,
+    "ast_hash": "0b8e00d7e87aaba284dff57dd41cddd7",
+    "semantic_hash": "0b8e00d7e87aaba284dff57dd41cddd7"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\documentation\\STREAMING_ARCHITECTURE.md": {
+    "mtime": 1795106071.3120224,
+    "ast_hash": "6f10c5c19247306643c7c1bb72f98c47",
+    "semantic_hash": "6f10c5c19247306643c7c1bb72f98c47"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\server\\requirements.txt": {
+    "mtime": 1795106071.316039,
+    "ast_hash": "b29ad711e3800f1f84281c14586eebf7",
+    "semantic_hash": "b29ad711e3800f1f84281c14586eebf7"
+  },
+  "C:\\Users\\adam_rkb\\Documents\\BUT INFO\\BuildAI\\BuildAI_Synthese_Projet.pdf": {
+    "mtime": 1795106068.1634789,
+    "ast_hash": "1fd7c9d6f1beec22f851f862a5232b2f",
+    "semantic_hash": "1fd7c9d6f1beec22f851f862a5232b2f"
+  }
+}
