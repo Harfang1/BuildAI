@@ -1,0 +1,13 @@
+# Configuration GPU NVIDIA (Ollama)
+# Pour activer le GPU sur une nouvelle machine :
+# cp docker-compose.gpu.yml docker-compose.override.yml
+services:
+  btp-rag-ollama:
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
